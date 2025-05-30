@@ -32,29 +32,27 @@ The purpose of this project is to perform a sentiment analysis on 50,000 movie r
   - Long Short-Term Memory
   - Random Forest
   - LinearSVC
-  - K-Neigbors
+  - K-Nearest Neigbors
 
 ## Table of Contents
 
 1. [Analysis Process](#analysis-process)
-2. [Ethical Considerations](#ethical-considerations)
-3. [Dependencies](#dependencies)
-4. [Installation Instructions](#installation-instructions)
-5. [Features](#features)
-6. [Acknowledgements](#acknowledgements)
+2. [Dependencies](#dependencies)
+3. [Installation Instructions](#installation-instructions)
+4. [Data Visualization](#data-visualization)
+5. [Data Sources](#data-sources)
 
 ## Analysis Process
 
 1. Gather relevant dataset and CSV file
-2. Create schematics declaring primary and foreign keys
-3. Load, clean, and transform data into usable datasets
-4. Align keys across datasets to create visualizations
-
-## Ethical Considerations
-
-- Terms of service for the Nielsen Ratings Website were checked
-- Web scraping of Nielsen Ratings data was performed for educational purposes only
-- All work is cited, and an Appendix is included
+2. Load, clean, and transform data into usable dataset
+3. Preprocessing & Lemmization
+4. Encode Label
+5. Split the Data into Training and Testing Sets¶
+6. Building & Training LSTM (Long Short-Term Memory) Model
+7. Random Forest, Linear SVC, K-Nearest Neighbors Models
+8. Model Evaluations and Predictions
+9. Best Fit Model and Conclusion
 
 ## Dependencies
 
@@ -80,31 +78,12 @@ The purpose of this project is to perform a sentiment analysis on 50,000 movie r
 - Pip install kagglehub
 - Pip install nltk
 
-## Features
+## Data Visualization
 
 - Data visualization including:
   - Bar plots
-
-## Acknowledgements
 
 ### Data Sources
 
 - IMDB Dataset having 50K movie reviews dataset was pulled from Kaggle: [(https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)]
 - More information on the IMDB Dataset having 50K movie reviews dataset:[(http://ai.stanford.edu/~amaas/data/sentiment/)]
-
-## Project Process
-
-1. ERD Schemata: Seth & Team
-2. SQL Databases: Team
-3. Organize Datasets: Team Effort
-   - Extract, Transform, Load:
-     - Team Data: Seth
-     - City Data: Rachel
-     - Stadium Data: Lilliana
-     - TV Data: Talibah
-     - Social Media Data: Isfund
-4. Visualization:
-   - Map
-   - Popularity Index - Stacked Bar Graph (with parameters)
-5. Powerpoint:
-   - Each team member will document and present their data
